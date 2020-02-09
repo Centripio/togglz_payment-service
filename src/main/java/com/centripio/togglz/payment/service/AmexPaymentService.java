@@ -12,7 +12,7 @@ import java.util.UUID;
 public class AmexPaymentService implements IPaymentService {
     @Override
     public PaymentConfirmation doPayment(PaymentRequest request) {
-        log.debug("Calling AMEX Payment Service");
+        log.info("Calling AMEX Payment Service");
         return new PaymentConfirmation(UUID.randomUUID().toString());
     }
 }

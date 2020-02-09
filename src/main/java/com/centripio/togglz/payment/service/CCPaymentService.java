@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class CCPaymentService implements IPaymentService {
     @Override
     public PaymentConfirmation doPayment(PaymentRequest request) {
-        log.debug("Calling CC Payment Service..");
+        log.info("Calling CC Payment Service..");
         return null;
     }
 }
